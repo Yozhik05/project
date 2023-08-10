@@ -1,24 +1,25 @@
 ﻿* {
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: 'Roboto', sans-serif;
-    min-width: 1200px;
+    min-width: 1216px;
     height: 10240px;
     background-image: url("assets/background.png");
     background-color: #282834;
+    background: #1E1E29;
     /* background-position: top center; */
 }
 
 .main {
-    max-width: 1216px;
-    max-height: 10030px;
+    min-width: 1216px;
+    min-height: 10030px;
     background-position: top center;
     margin: 0 auto;
 }
@@ -85,17 +86,22 @@ ul li {
     display: flex;
     /* justify-content: space-around; */
     position: relative;
+    height: 555px;
+    gap: 28px;
 }
 
 .main-content-left {
-    top: 181px;
+
     position: absolute;
 }
 
 .main-content-left h1 {
+    bottom: 0;
     display: flex;
-    width: 684.84px;
+    width: 630.84px;
     height: 173px;
+    /* width: 684.84px;
+    height: 181px; */
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
@@ -112,14 +118,313 @@ ul li {
     /* 110% */
 }
 
-.main-content-left p {}
+.main-content-left p {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
-.main-content-left button {}
+.main-content-left button {
+    color: #FFF;
+    text-align: center;
+    font-family: Font Awesome 5 Free;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 13px;
+    /* 100% */
+    text-transform: capitalize;
+
+    display: flex;
+    width: 219px;
+    padding: 10px 20.37px 10px 20px;
+    justify-content: center;
+    align-items: center;
+    /* gap: 28px; */
+
+    border-radius: 10px;
+    background: #5F6196;
+}
 
 .main-content-right img {
     /* margin-top: 103px; */
     position: absolute;
     right: -71px;
-    top: 103px;
+    /* top: 103px; */
+    bottom: 0;
 
+    width: 679px;
+    height: 452px;
+
+}
+
+/* managing-marketplaces */
+
+/* Optimize your marketplace management */
+/* Оптимизируйте управление маркетплейсами */
+
+.managing-marketplaces {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+
+
+    width: 1216px;
+
+}
+
+.managing-marketplaces h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+    /* 135% */
+    margin: 0 293px;
+}
+
+.managing-marketplaces-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 79px;
+}
+
+.card {
+    width: 392px;
+    height: 430px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #282834;
+
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px 10px;
+
+
+    padding: 0 26px;
+}
+
+.card img {
+    margin-top: -29px;
+}
+
+.card h4 {
+    margin-top: 51px;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card p {
+    color: #EDEDED;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 12px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px 0px #54C5AD;
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+.card:hover h4 {
+    color: #54C5AD;
+}
+
+/*  advertising-and-reviews  */
+
+.advertising-and-reviews {
+    display: flex;
+    align-items: center;
+    width: 1151px;
+    height: 713px;
+    margin-top: 200px;
+    /* background-color: #5F6196; */
+    text-align: left;
+}
+
+.advertising-and-reviews p {
+    color: #54C5AD;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 200% */
+    text-align: left;
+    align-items: start;
+}
+
+.advertising-and-reviews-bg img {
+    width: 508px;
+    height: 508px;
+    margin-right: 110px;
+    /* background-color: blueviolet; */
+}
+
+.advertising-management {
+    /* background-color: aquamarine; */
+}
+
+.advertising-management p {
+    color: #54C5AD;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 200% */
+}
+
+.advertising-management h3 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 120% */
+}
+
+.content-with-buttons {
+    display: flex;
+    align-items: center;
+    margin: 35px 15px 15px 5px;
+    box-sizing: border-box;
+    justify-content:space-between;
+}
+
+.advertising-button-1 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 177.778% */
+    margin-right: 15px;
+    /* margin-top: 35px; */
+
+
+    border-radius: 5px;
+    background: #5F6196;
+    box-shadow: 20px 0px 60px 0px rgba(14, 27, 56, 0.15);
+    padding: 7px 30px;
+}
+
+.advertising-button-2 {
+
+    display: flex;
+    padding: 7px 29.17px 7px 30px;
+    align-items: flex-start;
+
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.00);
+    box-shadow: 20px 0px 60px 0px rgba(14, 27, 56, 0.15);
+    /* padding: 7px 30px; */
+    border: #1E1E29 0;
+
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 177.778% */
+    align-self: flex-end;
+}
+
+.border-line {
+    border: 1px solid #54c56c;
+    width: 32px;
+    height: 22px;
+    margin-right: 0;
+    /* justify-self: end; */
+    
+}
+
+.advertising-management-item {
+    display: flex;
+    width: 540px;
+    height: 150px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #282834;
+    margin: 20px 0;
+    /* padding-top: 35px; */
+    padding: 35px 0 0 35px;
+
+}
+
+.advertising-management-item img {
+    display: flex;
+    width: 23.2px;
+    height: 23px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    color: #54C5AD;
+    text-align: center;
+    font-family: Font Awesome 5 Free;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25px;
+    /* 208.333% */
+    margin-right: 20px;
+    margin-top: 9px;
+}
+
+.advertising-management-item div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.advertising-management-item div h4 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 177.778% */
+}
+
+.advertising-management-item div p {
+
+
+    color: #8D96A0;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 157.143% */
+    width: 320px;
+    margin-top: 8px;
+}
+
+.advertising-management-item:hover {
+    box-shadow: 0px 0px 10px 0px #54C5AD;
+    cursor: pointer;
 }
