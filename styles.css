@@ -131,32 +131,30 @@ ul li {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
     margin-top: 20px;
 }
 
 .main-content-left button {
-    color: #FFF;
-    text-align: center;
-    font-family: Font Awesome 5 Free;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 13px;
-    /* 100% */
-    text-transform: capitalize;
-
     display: flex;
     width: 219px;
     padding: 10px 20.37px 10px 20px;
     justify-content: center;
     align-items: center;
     margin-top: 38px;
-    /* gap: 28px; */
-
     border-radius: 10px;
     background: #5F6196;
+    margin-right: 28px;
+}
 
+.main-content-text-button{
+    margin-right: 28px;color: #FFF;
+    text-align: center;
+    font-family: Font Awesome 5 Free;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px;
+    text-transform: capitalize;
 }
 
 .main-content-right img {
